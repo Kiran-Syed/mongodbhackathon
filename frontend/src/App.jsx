@@ -2,9 +2,10 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 import Signup from './pages/signup';
+import Login from './pages/login';
 
 
-function App() {
+function App(){
 
   return (
     <>
@@ -13,7 +14,7 @@ function App() {
       <Routes>
         {/* <Route path="/" element={<Homepage />} /> */}
         <Route path="/" element={<Signup />} />
-        {/* <Route path="/login" element={<Login />} /> */}
+        <Route path="/login" element={<Login />} />
       </Routes>
       
     </BrowserRouter>
